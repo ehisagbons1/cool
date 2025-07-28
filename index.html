@@ -1,44 +1,142 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>ADELE WEBSITE</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-   <div id="container">
-    <div id="header">
-        <div class="brand-name">Logo</div>
-        <div id="navbar">
-            <ul class="navlink">
-                <a>
-                    <li>Home</li>
-                </a>
-                <a>
-                    <li>About</li>
-                </a>
-                <a>
-                    <li>Service</li>
-                </a>
-                <a>
-                    <li>Contact</li>
-                </a>
-            </ul>
-        </div>
-    </div>
-    <div class="maincontent">
-        <div class="left-content">
-            <h2>we are good</h2>
-        </div>
-        <div class="right-content">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adele Creative Studio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header with Responsive Navbar -->
+        <header class="header">
+            <div class="logo">Adele<span>Studio</span></div>
+            <nav class="navbar">
+                <button class="nav-toggle" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-        </div>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Creative Solutions for Modern Businesses</h1>
+                <p>We help brands tell their stories through innovative design and technology</p>
+                <a href="#contact" class="cta-button">Get Started</a>
+            </div>
+        </section>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <section id="about" class="about-section">
+                <div class="about-content">
+                    <h2>Why We're Different</h2>
+                    <p>At Adele Studio, we combine creativity with strategy to deliver exceptional results. Our team of experts brings diverse skills to every project, ensuring innovative solutions tailored to your needs.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-lightbulb"></i>
+                            <h3>Innovative</h3>
+                            <p>We stay ahead of trends to deliver fresh ideas</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-chart-line"></i>
+                            <h3>Strategic</h3>
+                            <p>Data-driven approaches for measurable results</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-heart"></i>
+                            <h3>Passionate</h3>
+                            <p>We truly care about our clients' success</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://via.placeholder.com/500x400" alt="Creative team working">
+                </div>
+            </section>
+
+            <!-- Services Section -->
+            <section id="services" class="services">
+                <h2>Our Services</h2>
+                <div class="service-cards">
+                    <div class="card">
+                        <i class="fas fa-paint-brush"></i>
+                        <h3>Brand Design</h3>
+                        <p>Create a memorable brand identity that stands out</p>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-code"></i>
+                        <h3>Web Development</h3>
+                        <p>Custom websites that drive results</p>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>App Design</h3>
+                        <p>Beautiful, functional mobile experiences</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Testimonials -->
+            <section class="testimonials">
+                <h2>What Our Clients Say</h2>
+                <div class="testimonial-container">
+                    <div class="testimonial">
+                        <img src="https://via.placeholder.com/80" alt="Client 1">
+                        <p>"Adele Studio transformed our online presence. Their strategic approach delivered beyond our expectations."</p>
+                        <h4>Sarah Johnson</h4>
+                        <span>CEO, TechStart</span>
+                    </div>
+                    <div class="testimonial">
+                        <img src="https://via.placeholder.com/80" alt="Client 2">
+                        <p>"The team's creativity and attention to detail made all the difference in our rebranding project."</p>
+                        <h4>Michael Chen</h4>
+                        <span>Marketing Director</span>
+                    </div>
+                    <div class="testimonial">
+                        <img src="https://via.placeholder.com/80" alt="Client 3">
+                        <p>"Working with Adele was seamless from start to finish. Highly recommend their services!"</p>
+                        <h4>Emma Rodriguez</h4>
+                        <span>Founder, Bloom Co.</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <h2>Ready to Start Your Project?</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Tell us about your project" required></textarea>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-logo">Adele<span>Studio</span></div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <p>&copy; <span id="year"></span> Adele Creative Studio. All rights reserved.</p>
+            </div>
+        </footer>
     </div>
-    <div class="testimonials">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias eos maiores unde sit quis, corporis impedit numquam similique aspernatur eligendi. Unde dolores sint quaerat a magnam officiis quos veritatis tenetur!</p>
-    </div>
-   </div>
-   <div class="footer">
-    <h2>adele<span>2024</span></h2>
-   </div>
-    </body>
+
+    <script src="script.js"></script>
+</body>
 </html>
