@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: green;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: large;
+    font-weight: bold;
+}
+
+#container{ 
+    width: 100%;
+    height: 1800px;
+    background-color: white;
+}
+
+#header{
+    width: 100%;
+    height: 120px;
+    background-color: red;
+    color: white;
+    border-bottom: green;
+}
+
